@@ -10,3 +10,4 @@ summarize(diamonds, mean_carat = mean(carat)) #Genera una amplia gama de estadis
 ggplot(data = diamonds, aes(x = carat, y = price)) + geom_point() #Crea una visualizacion como diagrama de dispersion geom_point()
 ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) + geom_point() #Cambiar el color
 facet_wrap() #Grafico diferente para cada corte
+rename()
