@@ -14,4 +14,7 @@ best <- cacao2 %>%
 View(best)
 install.packages("ggplot2")
 library(ggplot2)
-ggplot(data = best)+geom_bar(mapping = aes(x=Company.Location,fill=Rating))
+ggplot(data = best)+geom_bar(mapping = aes(x=Cocoa.Percent,fill=Company...Maker.if.known.))
+ggsave("Porcentaje_compañia.jpg")
+ggplot(data=best)+geom_point(mapping=aes(x=Rating, y=Cocoa.Percent, color=Company...Maker.if.known.))
+
